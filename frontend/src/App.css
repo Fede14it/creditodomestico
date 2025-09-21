@@ -1,0 +1,33 @@
+/* Stili essenziali che non possono essere replicati con Bootstrap */
+
+/* Animazione fade-in per i componenti */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hover effect per le card */
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Stile per le tab attive */
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #0d6efd;
+  background-color: transparent;
+}
+
+/* Hover effect per le righe della tabella */
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+} 
